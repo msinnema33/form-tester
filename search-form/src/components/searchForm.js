@@ -8,7 +8,7 @@ import axios from "axios";
       axios
         .get('https://rickandmortyapi.com/api/character/')
         .then(response => {
-        //   console.log(response.data.results)
+        //console.log(response.data.results)
           const characters = response.data.results.filter(
             character =>
               character.name
@@ -21,7 +21,7 @@ import axios from "axios";
         //   console.log('this is the ', data);
         });
     }, [query]);
-    console.log('this is the ', data);
+    //console.log('this is the ', data);
     const handleInputChange = event => {
       setQuery(event.target.value);
     };
