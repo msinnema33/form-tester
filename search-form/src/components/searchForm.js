@@ -35,7 +35,7 @@ import axios from "axios";
             name="name"
             tabIndex="0"
             className="prompt search-name"
-            placeholder="search by name"
+            placeholder="search by Character"
             autoComplete="off"
           />
         </form>
@@ -44,7 +44,7 @@ import axios from "axios";
             return (
               <div
                 className="character-list "
-                key={data._id}
+                key={data.id}
               >
                 <h3 className="capital">
                   Name:  {data.name}

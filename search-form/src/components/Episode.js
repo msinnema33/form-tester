@@ -6,19 +6,19 @@ import axios from "axios";
     const [query, setQuery] = useState("");
     useEffect(() => {
       axios
-        //.get('https://rickandmortyapi.com/api/episode/')
+        .get('https://rickandmortyapi.com/api/episode/')
         .then(response => {
-        //   console.log(response.data.results)
-        //   const episodes = response.data.results.filter(
-        //     episode =>
-        //       episode.name
-        //         .toLowerCase()
-        //         .includes(query.toLowerCase())
-        //   );
-        //   console.log(episodes);
-        //   console.log("rick and morty episodes", response);
-        //   setData(episodes);
-        //   console.log('this is the ', data);
+          console.log(response.data.results)
+          const episodes = response.data.results.filter(
+            episode =>
+              episode.name
+                .toLowerCase()
+                .includes(query.toLowerCase())
+          );
+          console.log(episodes);
+          console.log("rick and morty episodes", response);
+          setData(episodes);
+          console.log('this is the ', data);
         });
     }, [query]);
     
@@ -35,7 +35,7 @@ import axios from "axios";
             name="name"
             tabIndex="0"
             className="prompt search-name"
-            placeholder="search by name"
+            placeholder="search by Episode"
             autoComplete="off"
           />
         </form>

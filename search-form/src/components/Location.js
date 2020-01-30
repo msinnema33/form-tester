@@ -6,17 +6,17 @@ import axios from "axios";
     const [query, setQuery] = useState("");
     useEffect(() => {
       axios
-        //.get('https://rickandmortyapi.com/api/location/')
+        .get('https://rickandmortyapi.com/api/location/')
         .then(response => {
-        //  console.log(response.data.results)
-        //   const locations = response.data.results.filter(
-        //     location =>
-        //       location.name
-        //         .toLowerCase()
-        //         .includes(query.toLowerCase())
-        //   );
-        //   console.log("rick and morty locations", response);
-        //  setData(locations);
+         console.log(response.data.results)
+          const locations = response.data.results.filter(
+            location =>
+              location.name
+                .toLowerCase()
+                .includes(query.toLowerCase())
+          );
+          console.log("rick and morty locations", response);
+         setData(locations);
         });
     }, [query]);
     
@@ -33,7 +33,7 @@ import axios from "axios";
             name="name"
             tabIndex="0"
             className="prompt search-name"
-            placeholder="search by name"
+            placeholder="search by Location"
             autoComplete="off"
           />
         </form>
