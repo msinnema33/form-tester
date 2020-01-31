@@ -1,7 +1,7 @@
 import React from 'react';
 import Characters from './components/searchForm';
-// import Location from './components/Location';
-// import Episode from './components/Episode';
+import Location from './components/Location';
+import Episode from './components/Episode';
 
 import './App.css';
 
