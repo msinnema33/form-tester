@@ -8,17 +8,17 @@ import axios from "axios";
       axios
         .get('https://rickandmortyapi.com/api/episode/')
         .then(response => {
-          console.log(response.data.results)
+          //console.log(response.data.results)
           const episodes = response.data.results.filter(
             episode =>
               episode.name
                 .toLowerCase()
                 .includes(query.toLowerCase())
           );
-          console.log(episodes);
-          console.log("rick and morty episodes", response);
+          //console.log(episodes);
+          //console.log("rick and morty episodes", response);
           setData(episodes);
-          console.log('this is the ', data);
+          //console.log('this is the ', data);
         });
     }, [query]);
     

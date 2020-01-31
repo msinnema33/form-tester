@@ -8,14 +8,14 @@ import axios from "axios";
       axios
         .get('https://rickandmortyapi.com/api/location/')
         .then(response => {
-         console.log(response.data.results)
+         //console.log(response.data.results)
           const locations = response.data.results.filter(
             location =>
               location.name
                 .toLowerCase()
                 .includes(query.toLowerCase())
           );
-          console.log("rick and morty locations", response);
+          //console.log("rick and morty locations", response);
          setData(locations);
         });
     }, [query]);
