@@ -25,6 +25,7 @@ import axios from "axios";
     };
     return (
       <div className="spells">
+        <h1>List of Locations</h1>  
         <form className="search">
           <input
             type="text"

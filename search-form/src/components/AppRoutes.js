@@ -24,7 +24,6 @@ function AppRoutes() {
           <Route path="/Location" component={Location} />
           <Route path="/Episode" component={Episode} />
           <Route path="/" component={Characters} />
-
         </Switch>
       </div>
     </Router>

@@ -27,6 +27,7 @@ import axios from "axios";
     };
     return (
       <div className="spells">
+        <h1>Character List</h1>  
         <form className="search">
           <input
             type="text"
@@ -58,9 +59,9 @@ import axios from "axios";
                 <h3 className="capital">
                   Origin: {data.origin.name}
                 </h3>
-                <h3 className="capital">
+                {/* <h3 className="capital">
                   More info: {data.url}
-                </h3>
+                </h3> */}
               </div>
             );
           })}
